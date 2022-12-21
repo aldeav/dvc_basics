@@ -50,5 +50,10 @@ stages:
         y: precision
     - evaluation/plots/sklearn/confusion_matrix.json:
         cache: false
+        template: confusion
+        x: actual
+        y: predicted
     - evaluation/plots/sklearn/roc.json:
         cache: false
+        x: fpr
+        y: tpr

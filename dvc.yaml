@@ -46,6 +46,8 @@ stages:
     - evaluation/plots/importance.png
     - evaluation/plots/prc.json:
         cache: false
+        x: recall
+        y: precision
     - evaluation/plots/sklearn/confusion_matrix.json:
         cache: false
     - evaluation/plots/sklearn/roc.json:
